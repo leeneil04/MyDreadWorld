@@ -32,3 +32,17 @@ int main(){
     cout <<c<<endl;
 } 
 A to Z alphabetically
+
+
+4. Data Type = Identifier = Value
+
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 10;
+    long y = 1000000;
+    double dd = 100.0;
+    float ff = 'f';
+    cout <<x<< endl;
+    return 0;
+}
