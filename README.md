@@ -52,3 +52,16 @@ int main(){
 
     return 0;
 }    
+
+
+
+5. If-else
+#include <iostream>
+using namespace std;
+int main(){
+    int lovelife=99;
+    if(lovelife==0){
+        cout<<"Aaah Kawawa"<<endl;
+    }
+    return 0;
+}
