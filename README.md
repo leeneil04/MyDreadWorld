@@ -82,3 +82,26 @@ int main(){
     }
     return 0;
 }
+
+7. Else if and else part 2
+#include <iostream>
+using namespace std;
+int main(){
+    int lovelife=2;
+    if(lovelife==0){
+        cout<<"Aaah Kawawa"<<endl;
+    }
+    else if(lovelife==69){
+        cout<<"Waw";
+    }
+    else if(lovelife==04){
+        cout<<"Nice";
+    }
+    else if(lovelife==01){
+        cout<<"Hello po";
+    }
+    else{
+        cout<<"Ayaw Ku";
+    }
+    return 0;
+}
