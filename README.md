@@ -105,3 +105,21 @@ int main(){
     }
     return 0;
 }
+
+
+4. LOOPS
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //While loop -- sentinel-controlled
+    int x = 0;
+    while(x != 99){
+        cout<<"Enter a number:";
+        cin >> x;
+    }
+    cout<<"Loop ended"<<endl;
+    return 0;
+}
