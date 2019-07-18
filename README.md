@@ -123,3 +123,52 @@ int main()
     cout<<"Loop ended"<<endl;
     return 0;
 }
+
+
+5. With WHILE LOOP
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //While loop -- sentinel-controlled
+    int x = 0;
+    while(x != 99){
+        cout<<"Enter a number:";
+        cin >> x;
+    }
+    cout<<"Loop ended"<<endl;
+    
+6. COUNTER CONTROLLED LOOP
+#include <iostream>
+using namespace std;
+int main()
+{
+    //Counter-based loop
+    
+    for(int x = 2;x<=20;x+=2)
+        cout<<x<<endl;
+    return 0;
+}    
+AND
+#include <iostream>
+using namespace std;
+int main()
+{
+    //Counter-based loop
+    
+    for(int x = 1;x<20;x++)
+        cout<<x<<endl;
+    return 0;
+}
+    
+    //do-while
+    int y = 0;
+    do{
+       cout<<"Enter a number:";
+       cin >> y;
+    }while(y != 99);
+    cout<<"Do-while loop ended."<<endl;
+    return 0;
+}
