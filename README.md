@@ -162,3 +162,14 @@ int main()
     cout<<"Do-while loop ended."<<endl;
     return 0;
 }
+
+7.OPERATORS
+100 - 150 PROBLEM
+ANSWER IN MATHEMATICAL     
+150>= x >= 100   
+151> x > 99
+ 
+IN PROGRAMMING
+X>=100&&X<=150
+X>99&&<151
+
