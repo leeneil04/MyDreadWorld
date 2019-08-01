@@ -1,4 +1,4 @@
-# MyDreadWorld
+#MyDreadWorld
 ƒaded
 1.
 int main(){
@@ -44,6 +44,8 @@ int main(){
     double dd = 100.0;
     float ff = 100.0f;
     char xx = 'f';
+    bool bb = true;
+    string cooked = "love";
     cout <<x<< endl;
     cout <<y<< endl;
     cout <<dd<< endl;
@@ -67,20 +69,8 @@ int main(){
 }
 
 6. Else if and else
-#include <iostream>
-using namespace std;
-int main(){
-    int lovelife=69;
-    if(lovelife==0){
-        cout<<"Aaah Kawawa"<<endl;
-    }
-    else if(lovelife==69){
-        cout<<"Waw";
-    }
-    else{
-        cout<<"Nice";
-    }
-    return 0;
+
+
 }
 
 7. Else if and else part 2
