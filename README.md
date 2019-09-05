@@ -341,3 +341,84 @@ void displayHPBar(int hp){
     }  
     cout << endl;
 }
+ 10. POKEMON 
+#include<iostream>
+#include<string>
+
+using namespace std;
+//Global variables
+string POKEMON_1 = "Pikachu";
+string POKEMON_2 = "Tachi";
+
+//Pokemon Hp
+int hp1 = 60;
+int hp2 = 65;
+
+//Function Prototypes
+void displayHPBar(int);
+void displayPikachuSkills();
+void displayTachiSkills();
+
+int main(){
+    
+    cout<<POKEMON_1<<":";
+    displayHPBar(hp1);
+    cout<<POKEMON_2<<":";
+    displayHPBar(hp2);
+    
+    displayPikachuSkills();
+    
+    int choice;
+    cout<<"Enter skill number:";
+    cin>>choice;
+    
+    switch(choice){
+        case 1:
+            cout<<"Pikachu used Thunder Volt!";
+            hp1 -= 10;
+            break;
+           case 2:
+            cout<<"Paralyze Measure Influence!";
+            hp1 -= 10;
+            break;
+            case 3:
+            cout<<"Regen Volt Immune!";
+            hp1 -= 10;
+            break;
+            case 4:
+            cout<<"Sleeping Kit Activated!";
+            hp1 -= 10;
+            break;
+            default:
+                cout<<"Please Enter Proper Skill Number."<<endl;
+    }        
+    return 0; 
+}
+
+void displayPikachuSkills(){
+    
+        string PikachuSkills[] = {"Thunder Volt","Paralyze Measure","Regen Volt","Sleeping Kit"};
+        int length = sizeof(PikachuSkills) / sizeof(PikachuSkills[0]);
+        
+        for(int x=0;x<length;x++){
+            cout<<x+1<<"."<<PikachuSkills[x]<<endl;
+        }
+}
+void displayTachiSkills(){
+    
+        string TachiSkills[] = {"Fist Pucnch","Unstappable Kick","Regen Aura","Ultimate Flay"};
+        int length = sizeof(TachiSkills) / sizeof(TachiSkills[0]);
+        
+        for(int x=0;x<length;x++){
+            cout<<x+1<<"."<<TachiSkills[x]<<endl;
+        }
+}       
+//Function Definitions
+
+void displayHPBar(int hp){
+
+    for(int x=hp;x>0;x-=5) {
+        cout<< "|";
+    }  
+    cout <<hp<< endl;
+}
