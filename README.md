@@ -422,3 +422,114 @@ void displayHPBar(int hp){
     }  
     cout <<hp<< endl;
 }
+
+11. POKEMON WITH VICTORY QUOTE
+#include<iostream>
+#include<string.h>
+#include<cstdlib>
+
+using namespace std;
+//Global variables
+string POKEMON_1 = "squirtle";
+string POKEMON_2 = "pikachu";
+
+int hp1 = 60;
+int hp2 = 65;
+
+
+//Function Prototypes
+void displayHPBar(int);
+void displaySquirtleSkills();
+void displayPikachuSkills();
+
+void retaliate();
+
+int main(){
+    
+    while(hp1 > 0 && hp2 > 0){
+        cout<<POKEMON_1<<":";
+        displayHPBar(hp1);
+        cout<<POKEMON_2<<":";
+        displayHPBar(hp2);
+        
+        displaySquirtleSkills();
+        
+        int choice;
+        cout<<"enter skill number:";
+        cin>>choice;
+        
+        switch(choice){
+            case 1:
+             cout<<"squirtle used tackle"<<endl;
+             hp1 -=10;
+             break;
+            case 2:
+             cout<<"squirtle used tail whip"<<endl;
+             hp1 -= 10;
+             break;
+            case 3:
+             cout<<"squirtle used bite"<<endl;
+             hp1 -= 10;
+             break;
+            case 4:
+             cout<<"squirtle used bubble beam!"<<endl;
+             hp1 -= 10;
+             break;
+            default: cout<<"Enter correct number!"<<endl;
+        }
+        
+        retaliate();
+    }
+    
+    if(hp1 <= 0){
+        cout<<"Squirtle fainted!"<<endl;
+    }
+    else{
+        cout<<"Pikachu fainted!"<<endl;
+    }
+    
+    return 0;
+}
+
+void displaySquirtleSkills(){
+    string SquirtleSkills[] = {"Tackle","Tail Whip","Bite","Bubble Beam"};
+    int length = sizeof(SquirtleSkills) / sizeof (SquirtleSkills[0]);
+    
+    for(int x=0;x<length;x++){
+        cout<<x+1<<"."<<SquirtleSkills[x]<<endl;
+    }
+}
+
+//Function Definitions
+
+
+void displayHPBar(int hp){
+    for(int x=hp;x>0;x-=5){
+        cout << "|";
+    }
+    cout <<hp<<endl;
+}
+
+void retaliate(){
+    int randSkil = rand() % 4 + 1;
+    
+    switch(randSkil){
+        case 1:
+         cout<<"Pikachu used tackle!"<<endl;
+         hp2 -=10;
+         break;
+        case 2:
+         cout<<"Pikachu used iron tail!"<<endl;
+         hp2 -= 10;
+         break;
+        case 3:
+         cout<<"Pikachu used thunder!"<<endl;
+         hp2 -= 10;
+         break;
+        case 4:
+         cout<<"Pikachu used spark!"<<endl;
+         hp2 -= 10;
+         break;
+        default: cout<<"Enter correct number!"<<endl;
+    }
+}
