@@ -533,3 +533,56 @@ void retaliate(){
         default: cout<<"Enter correct number!"<<endl;
     }
 }
+
+
+12.ROMAN NUMERALS
+
+#include<iostream>
+
+using namespace std;
+
+void convertRoman(int num);
+
+int main()
+{ 
+    int num=999;
+   convertRoman(num);
+    return 0;
+    
+}
+    
+void convertRoman(int num){   
+    if(num>=1000){
+        cout<<"M";
+        convertRoman(num-1000);
+    }
+    else if(num>=500){
+        cout<<"D";
+        convertRoman(num-500);
+    }
+    else if(num>=100){
+        cout<<"C";
+        convertRoman(num-100);
+    }
+    else if(num>=50){
+        cout<<"L";
+        convertRoman(num-50);
+    }
+    else if(num>=10){
+        cout<<"X";
+        convertRoman(num-10);
+    }
+    else if(num>=9){
+        cout<<"IX";
+        convertRoman(num-9);
+    }
+    else if(num>=5){
+        cout<<"v";
+        convertRoman(num-5);
+    }
+    else if(num>=1){
+        cout<<"I";
+        convertRoman(num-1);
+    }
+    
+}
