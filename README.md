@@ -660,16 +660,15 @@ int main()
             break;
         default:
             // If the operator is other than +, -, * or /, error message is shown
-            cout << "Error! operator is not correct";
+            cout << "Error! operator is not correct"<<endl;
             break;
             
     }
         //----now once again the program will ask the user if want to continue or not
-        cout<<"enter n or N to continue:";
+        cout<<"Please enter n or N to continue:";
         cin>>redo;
         cout<<endl<<endl;
     }
     while(redo=='n'||redo=='N');
     return 0;
 }
-
