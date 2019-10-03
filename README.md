@@ -623,3 +623,53 @@ int main()
     }
     return 0;
 }
+14, CALCULATOR WITH DO WHILE OR PA ULIT-ULIT
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Lee Neil's Calculator" << endl;
+    char op,redo;
+    float num1, num2;
+    
+    do{
+    cout << "Enter operator + or - or * or /: "; cin >> op;
+    cout << "Enter 1st number: "; 
+    cin >> num1; 
+    cout << "Enter 2nd number: "; 
+    cin >> num2; 
+    
+
+    switch(op)
+    {
+        case '+':
+            cout<<"Answer for Addition is ("<<num1<<"+"<<num2<<"): ";
+            cout << num1+num2 << endl;
+            break;
+        case '-':
+            cout<<"Answer for Suctraction is ("<<num1<<"-"<<num2<<"): ";
+            cout << num1-num2 << endl;
+            break; 
+        case '*':
+            cout<<"Answer for Multiplication is ("<<num1<<"*"<<num2<<"): ";
+            cout << num1*num2 << endl;
+            break;
+        case '/':
+            cout<<"Answer for Division is ("<<num1<<"/"<<num2<<"): ";
+            cout << num1/num2 << endl;
+            break;
+        default:
+            // If the operator is other than +, -, * or /, error message is shown
+            cout << "Error! operator is not correct";
+            break;
+            
+    }
+        //----now once again the program will ask the user if want to continue or not
+        cout<<"enter n or N to continue:";
+        cin>>redo;
+        cout<<endl<<endl;
+    }
+    while(redo=='n'||redo=='N');
+    return 0;
+}
+
