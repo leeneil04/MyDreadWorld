@@ -586,3 +586,40 @@ void convertRoman(int num){
     }
     
 }
+
+13.CALCULATOR
+# include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Lee Neil's Calculator" << endl;
+    char op;
+    float num1, num2;
+    cout << "Enter operator + or - or * or /: "; cin >> op;
+    cout << "Enter 1st number: "; 
+    cin >> num1; 
+    cout << "Enter 2nd number: "; 
+    cin >> num2; 
+    
+    switch(op)
+    {
+        case '+':
+            cout<<"Answer for Addition is ("<<num1<<"+"<<num2<<"): ";
+            cout << num1+num2;
+            break;
+        case '-':
+            cout<<"Answer for Suctraction is ("<<num1<<"-"<<num2<<"): ";
+            break; 
+        case '*':
+            cout<<"Answer for Multiplication is ("<<num1<<"*"<<num2<<"): ";
+            break;
+        case '/':
+            cout<<"Answer for Division is ("<<num1<<"/"<<num2<<"): ";
+            break;
+        default:
+            // If the operator is other than +, -, * or /, error message is shown
+            cout << "Error! operator is not correct";
+            break;
+    }
+    return 0;
+}
