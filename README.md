@@ -672,3 +672,14 @@ int main()
     while(redo=='n'||redo=='N');
     return 0;
 }
+
+15. Arrays
+#include <iostream>
+using namespace std;
+
+int main(){
+    int abc[]={1, 2, 3, 4};
+    cout<<abc[0];
+    
+    return 0;
+}
