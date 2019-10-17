@@ -716,3 +716,24 @@ int main()
     }
     return 0;
 }
+
+18. With even the Odds Number in Multiplication
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    for(int x =1;x<11;x++){
+        for(int y =1;y<11;y++){
+            if((x*y)%2==1){
+                cout<< "O" <<" ";
+                }
+                else{
+                    cout<< x * y <<" ";
+                }     
+            } 
+            cout<<endl;
+        }
+    return 0;
+}
