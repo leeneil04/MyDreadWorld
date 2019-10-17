@@ -683,3 +683,36 @@ int main(){
     
     return 0;
 }
+
+16.Table in c++
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    
+    for(int x = 2;x<8;x++){
+        for(int y = 1;y<6;y++){
+        cout<<(x * y)<<" ";
+        }   
+        cout<<endl;
+    }
+    return 0;
+}    
+
+17. Multiplication Table
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for(int x = 1;x<11;x++){
+        for(int y=1;y<11;y++){
+            cout<<(x*y)<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
