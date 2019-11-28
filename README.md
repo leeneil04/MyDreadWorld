@@ -737,3 +737,31 @@ int main(){
         }
     return 0;
 }
+
+19. GGPYTHON
+
+#include<iostream>
+
+using namespace std;
+
+int main (){
+    cout<< "Enter Your Age Here: ";
+    int age;
+    cin >>age;
+    
+    if(age==20){
+        cout<< "Here's a wrisband" <<endl;
+    }
+    else if(age==19){
+        cout<< "Here's a wristband" << endl;
+    }
+    else if(age==18){
+        cout<<"Here's a wristband" << endl;
+    }    
+    else if(age<=17){
+        cout<<"Please Leave" << endl;
+    }
+    else 
+        cout<< "Welcome the user"<< endl;
+    return 0;
+}
