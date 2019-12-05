@@ -765,3 +765,29 @@ int main (){
         cout<< "Welcome the user"<< endl;
     return 0;
 }
+
+20. produc of first number
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int x;
+    int y;
+
+    cout<< "Enter First Number: ";
+    cin >> x;
+    cout <<"Enter Second Number: ";
+    cin >> y;
+    int z=x+y;
+    cout <<z <<endl;
+    
+    if(z>x){
+    cout << "Sum is greater";
+    }
+  
+    return 0;
+}
