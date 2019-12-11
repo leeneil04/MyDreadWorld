@@ -791,3 +791,16 @@ int main()
   
     return 0;
 }
+
+21. Using Esacape Sequence
+#include <iostream>
+
+using namespace std
+
+//using escape sequence
+int main()
+{
+    cout << "*****\n\tabc\n***\nabc\tedf\nsound" << endl;
+
+    return 0;
+}
