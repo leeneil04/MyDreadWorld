@@ -804,3 +804,46 @@ int main()
 
     return 0;
 }
+
+
+
+2nd SEMESTER 
+
+22. PYTHON
+
+def shap1():
+    print("   ___________   ")
+    print("  /           \  ")
+    print(" /             \ ")
+    print(" \             / ")
+    print("  \___________/  ")
+    print("\n")
+
+def shap2():
+    print(" \              / ")
+    print("  \            /  ")
+    print("   \__________/   ")
+    print("  +------------+  ")
+    print("\n")
+
+def shap3():
+    print("   __________   ")
+    print("  /          \  ")
+    print(" /            \ ")
+    print(" |    STOP    | ")
+    print(" \            / ")
+    print("  \__________/  ")
+    print("\n")
+
+def shap4():
+    print("  ____________   ")
+    print(" /            \  ")
+    print("/              \ ")
+    print("+--------------+  ")
+    
+shap1()    
+shap2()
+shap3()
+shap4()
+    
+    
