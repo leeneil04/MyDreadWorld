@@ -846,4 +846,13 @@ shap2()
 shap3()
 shap4()
     
-    
+
+
+23. Create a Function and list the numbers that are Lesser than 5.
+
+list = [1, 5, 4, 13, 19, 20, 4, 2]
+def num():
+    for x in list:
+        if x < 5:
+            print(x)
+num()
