@@ -874,3 +874,123 @@ elif (499 >= units >= 400):
 elif (units >500):
     print('\nYou Will be Paying: $19')
 else 
+
+
+25. Electicity  Bill
+
+print("First Customer")
+
+unit1 = int(input("Enter Your Units:"))
+
+if (199 >= unit1 >=100):
+    print("\tPay $10")
+elif (399 >= unit1 >=200):
+    print("\tPay $13")
+elif (499 >= unit1 >= 400):
+    print("\tPay $17")
+elif (unit1>=500):
+    print("\tPay $19")
+    
+else:
+    print("Invalid Number")
+    
+print("\nSecond Customer")
+
+unit2 = int(input("Enter Your Units:"))
+
+if (199 >= unit2 >= 100):
+    print("\tPay $10")
+elif (399 >= unit2 >= 200):
+    print("\tPay $13")
+elif (499 >= unit2 >= 400):
+    print("\tPay $17")
+elif (unit2 >=500):
+    print("\tPay $19")
+    
+else:
+    print("Invalid Number")
+    
+print("\nThird Customer")
+
+unit3 = int(input("Enter Your Units:"))
+if (199 >= unit3 >= 100):
+    print("\tPay $10")
+elif (399 >= unit3 >= 200):
+    print("\tPay $13")
+elif (499 >= unit3 >= 300):
+    print("\tPay $17")
+elif (unit3 >=500):
+    print("\tPay $19")
+
+else:
+    print("Invalid Number")
+    
+print("\nFourth Customer")
+
+unit4 = int(input("Enter Your Units:"))
+if (199 >= unit4 >=100):
+    print("\tPay $10")
+elif (399 >= unit4 >= 200):
+    print("\tPay $13")
+elif (499 >= unit4 >= 300):
+    print("\tPay $17")
+elif (unit4 >= 500):
+    print("\tPay $19")
+    
+else:
+    print("Invalid Number")
+    
+print("\nFifth Customer")
+
+unit5 = int(input("Enter Your Units:"))
+if (199 >= unit5 >= 100):
+    print("\tPay $10")
+elif (399 >= unit5 >= 200):
+    print("\tPay $13")
+elif (499 >= unit5 >= 300):
+    print("\tPay $17")
+elif (unit5 >= 500):
+    print("\tPay $19")
+
+else:
+    print("Invalid Number")
+    
+totalunit = unit1 + unit2 + unit3 + unit4 + unit5
+print("\ntotalunit" + str(totalunit))
+
+if (unit1>unit2) and (unit1>unit3) and (unit1>unit4) and (unit1>unit5):
+    largest = unit1
+    print("\nHighest Unit" + str(largest))
+elif (unit2>unit1) and (unit2>unit3) and (unit2>unit4) and (unit2>unit5):
+    largest = unit2
+    print("\nHighest Unit" + str(largest))
+elif (unit3>unit1) and (unit3>unit2) and (unit3>unit4) and (unit3>unit5):
+    largest = unit3
+    print("\nHighest Unit" + str(largest))
+elif (unit4>unit1) and (unit4>unit2) and (unit4>unit3) and (unit4>unit5):
+    largest = unit4
+    print("\nHighest Unit" + str(largest))
+elif (unit5>unit1) and (unit5>unit2) and (unit5>unit3) and (unit5>unit4):
+    largest = unit5
+    print("\nHighest Unit" + str(largest))
+    
+else:
+    print("None")
+
+if (unit1<unit2) and (unit1<unit3) and (unit1<unit4) and (unit1<unit5):
+    lowest = unit1
+    print("\nLowest Unit" + str(lowest))
+elif (unit2<unit1) and (unit2<unit3) and (unit2<unit4) and (unit2<unit5):
+    lowest = unit2
+    print("\nLowest Unit" + str(lowest))
+elif (unit3<unit1) and (unit3<unit2) and (unit3<unit4) and (unit3<unit5):
+    lowest = unit3
+    print("\nLowest Unit" + str(lowest))
+elif (unit4<unit1) and (unit4<unit2) and (unit4<unit3) and (unit4<unit5):
+    lowest = unit4
+    print("\nLowest Unit" + str(lowest))
+elif (unit5<unit1) and (unit5<unit2) and (unit5<unit3) and (unit5<unit4):
+    lowest = unit5
+    print("\nLowest Unit" + str(lowest))
+else:
+    print("None")
