@@ -856,3 +856,21 @@ def num():
         if x < 5:
             print(x)
 num()
+
+
+24
+#Electricity Bill
+
+name = input('Please Enter Your Name:')
+
+units = int(input('\nPlease Enter Your Units:'))
+
+if (199 >= units >= 100):
+    print('\nYou Will be Paying: $10')
+elif (399 >= units >= 200):
+    print('\nYou Will be Paying: $13')
+elif (499 >= units >= 400):
+    print('\nYou Will be Paying: $17')
+elif (units >500):
+    print('\nYou Will be Paying: $19')
+else 
